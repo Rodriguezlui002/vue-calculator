@@ -1,47 +1,51 @@
 <template>
   <div class="min-w-full w-screen min-h-full h-screen flex justify-center place-items-center">
-    <div class="grid grid-cols-1 w-96 h-80 p-6 bg-red-900">
-      <div class="text-xl font-medium text-center bg-blue-400 whitespace-nowrap overflow-auto">solution</div>
+    <div class="grid grid-cols-1 w-96 pt-9 bg-gray-800">
 
-      <div class="grid grid-cols-5">
-        <div class="bg-purple-400">&#94;</div>
-        <div class="bg-purple-400">Sin</div>
-        <div class="bg-purple-400">Cos</div>
-        <div class="bg-purple-400">Tan</div>
-        <div class="bg-purple-400">Cot</div>
-        <div class="bg-purple-400">ArcSin</div>
-        <div class="bg-purple-400">ArcCos</div>
-        <div class="bg-purple-400">ArcTan</div>
-        <div class="bg-purple-400">ArcCtg</div>
-        <div class="bg-purple-400">Ln</div>
-        <div class="bg-purple-400">log10</div>
-        <div class="bg-purple-400">[]</div>
-        <div class="bg-purple-400">{}</div>
-        <div class="bg-purple-400">()</div>
-      </div>
+      <div class="h-16 pr-4 flex justify-end items-center text-3xl text-ivory whitespace-nowrap overflow-auto">solution</div>
 
-      <div class="grid grid-cols-2 gap-3 text-center bg-green-300">
-        <div class="grid grid-cols-3">
-          <div class="flex flex-col justify-center bg-green-500">1</div>
-          <div class="flex flex-col justify-center bg-green-500">2</div>
-          <div class="flex flex-col justify-center bg-green-500">3</div>
-          <div class="flex flex-col justify-center bg-green-500">4</div>
-          <div class="flex flex-col justify-center bg-green-500">5</div>
-          <div class="flex flex-col justify-center bg-green-500">6</div>
-          <div class="flex flex-col justify-center bg-green-500">7</div>
-          <div class="flex flex-col justify-center bg-green-500">8</div>
-          <div class="flex flex-col justify-center bg-green-500">9</div>
-          <div class="flex flex-col justify-center bg-green-500">0</div>
-          <div class="flex flex-col justify-center bg-green-500">.</div>
-          <div class="flex flex-col justify-center bg-green-500">&#x0186;</div>
+      <div class="h-96 bg-gray-900 flex flex-col p-4 rounded-t-2xl">
+        <div class="h-36 grid grid-cols-4 gap-1 mb-4">
+          <button class="bg-cwu-red text-ivory rounded text-lg">&#94;</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">Sin</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">Sin</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">Cos</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">Tan</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">Cot</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">ArcSin</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">ArcCos</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">ArcTan</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">ArcCtg</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">Ln</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">log10</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">[]</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">{}</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">()</button>
+          <button class="bg-cwu-red text-ivory rounded text-lg">&#247;</button>
         </div>
 
-        <div class="grid">
-          <div class="bg-yellow-400">&#247;</div>
-          <div class="bg-yellow-400">&#215;</div>
-          <div class="bg-yellow-400">&#8722;</div>
-          <div class="bg-yellow-400">&#43;</div>
-          <div class="bg-yellow-400">&#61;</div>
+        <div class="flex-1 flex gap-1">
+          <div class="flex-1 grid grid-cols-3 gap-1 text-center">
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">1</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">2</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">3</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">4</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">5</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">6</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">7</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">8</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">9</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">0</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">.</button>
+            <button class="bg-ivory text-gray-800 rounded-md font-semibold text-xl">&#x0186;</button>
+          </div>
+
+          <div class="w-16 grid gap-1">
+            <button class="bg-blue-ncs text-ivory rounded-md font-semibold text-xl">&#215;</button>
+            <button class="bg-blue-ncs text-ivory rounded-md font-semibold text-xl">&#8722;</button>
+            <button class="bg-blue-ncs text-ivory rounded-md font-semibold text-xl">&#43;</button>
+            <button class="bg-red-orange text-ivory rounded-md font-semibold text-xl">&#61;</button>
+          </div>
         </div>
       </div>
     </div>
