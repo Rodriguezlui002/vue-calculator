@@ -1,7 +1,7 @@
 # vue-calculator
 **CS 480 Lab 3 - Scientific Calculator**
 
-This project (as of October 3rd 2021) is hosted on Vercel and can be found [here]()
+This project (as of October 3rd 2021) is hosted on Vercel and can be found [here](https://vue-calculator-9oyj3amwz-rodriguezlui002.vercel.app/)
 
 ## Functionality
 Using the interface compiled to HTML by Vue.js, this calculator runs like any general purpose calculator.
