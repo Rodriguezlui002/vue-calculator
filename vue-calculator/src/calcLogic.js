@@ -103,10 +103,15 @@ function rpn(eqn) {
     let obj = '';
     let type = '';
 
+    // Relpace first instance of a solo "-(" appearance
     if (eqn.charAt(0) === '-') {
         eqn = eqn.substring(1);
         eqn = 'negative' + eqn;
     }
+
+    // Replace "-(" and "(-" with the negative unary function
+    eqn = eqn.replace(/-\(/g, 'negative(');
+    eqn = eqn.replace(/\(-/g, 'negative(');
 
     // Evaluate each token
     for (let i = 0; i < eqn.length; i++) {

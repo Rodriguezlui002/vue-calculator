@@ -66,10 +66,14 @@ export default {
   },
   watch: {
     output: function () {
-      this.output = this.output.replace(/--/g, "+");
-      this.output = this.output.replace(/\+-/g, "-");
-      this.output = this.output.replace(/-\+/g, "-");
-      this.output = this.output.replace(/-\(-/g, "");
+      try {
+        this.output = this.output.replace(/--/g, "+");
+        this.output = this.output.replace(/\+-/g, "-");
+        this.output = this.output.replace(/-\+/g, "-");
+        this.output = this.output.replace(/-\(-/g, "");
+      } catch {
+        
+      }
     }
   },
   methods: {
