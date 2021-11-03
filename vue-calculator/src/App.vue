@@ -69,6 +69,7 @@ export default {
       this.output = this.output.replace(/--/g, "+");
       this.output = this.output.replace(/\+-/g, "-");
       this.output = this.output.replace(/-\+/g, "-");
+      this.output = this.output.replace(/-\(-/g, "");
     }
   },
   methods: {
