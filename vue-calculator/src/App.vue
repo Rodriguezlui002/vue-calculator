@@ -1,5 +1,5 @@
 <template>
-  <div class="min-w-full w-screen min-h-full h-screen flex justify-center place-items-center">
+  <div class="min-w-full w-screen min-h-full h-screen flex justify-center place-items-center touch-action-none">
     <div class="grid grid-cols-1 w-96 pt-9 bg-gray-700">
 
       <div class="h-16 pr-4 flex justify-end items-center text-3xl text-ivory whitespace-nowrap overflow-auto">{{ output }}</div>
