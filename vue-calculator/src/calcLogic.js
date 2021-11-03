@@ -36,7 +36,8 @@ let UNARY_FUNCS = {
     arcctg: genFunc((x) => Math.PI / 2 - Math.atan(x)),
     ln: genFunc((x) => Math.log(x)),
     log: genFunc((x) => Math.log10(x)),
-    sqrt: genFunc((x) => Math.sqrt(x))
+    sqrt: genFunc((x) => Math.sqrt(x)),
+    negative: genFunc((x) => -x)
 };
 
 let BINARY_FUNCS = {
@@ -70,9 +71,9 @@ function getNumVal(x) {
 
 function findElement(i, eqn, list) {
     for (let k = 0; k < list.length; k++) {
-        let n = list[k].length;
-        if (eqn.substring(i, i + n) === list[k]) {
-            return [true, list[k], n];
+        let len = list[k].length;
+        if (eqn.substring(i, i + len) === list[k]) {
+            return [true, list[k], len];
         }
     }
 
@@ -102,6 +103,11 @@ function rpn(eqn) {
     let obj = '';
     let type = '';
 
+    if (eqn.charAt(0) === '-') {
+        eqn = eqn.substring(1);
+        eqn = 'negative' + eqn;
+    }
+
     // Evaluate each token
     for (let i = 0; i < eqn.length; i++) {
         let token = eqn[i];
@@ -110,7 +116,7 @@ function rpn(eqn) {
             continue;
         }
 
-        // Determine if the toke is a number, function, or operator
+        // Determine if the token is a number, function, or operator
         if (isNumber(token)) {
             type = type_const;
 

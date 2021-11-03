@@ -64,8 +64,18 @@ export default {
       output: ''
     }
   },
+  watch: {
+    output: function () {
+      this.output = this.output.replace(/--/g, "+");
+      this.output = this.output.replace(/\+-/g, "-");
+      this.output = this.output.replace(/-\+/g, "-");
+    }
+  },
   methods: {
     appendExpression(char) {
+      if (this.output === '' && char === '-') {
+        char = '-(';
+      }
       this.output = this.output + char;
     },
     clearOut() {
@@ -78,7 +88,7 @@ export default {
         this.output = evalu(tree);
       } catch (e) {
         console.log(e);
-        this.output = 'error';
+        this.output = 'Syntax ERROR';
       }
     }
   }
